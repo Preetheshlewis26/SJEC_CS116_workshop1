@@ -1,4 +1,4 @@
-OM python:3.10.2-alpine3.15
+FROM python:3.10.2-alpine3.15
 # Create directories  
 RUN mkdir -p /root/workspace/src
 COPY ./python_web_scrape.py  /root/workspace/src
