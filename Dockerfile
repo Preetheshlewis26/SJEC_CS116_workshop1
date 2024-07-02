@@ -6,7 +6,7 @@ COPY ./python_web_scrape.py  /root/workspace/src
 WORKDIR /root/workspace/src
 # Install required packages
 RUN pip install --upgrade pip
-RUN pip install requests bs4 html5lib
+RUN pip install requests bs4 html5lib psycopg2-binary
 CMD ["python_web_scrape.py"]
 ENTRYPOINT ["python"]
 
